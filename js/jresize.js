@@ -20,7 +20,7 @@
 
         // Insert our resizing plugin
         $('#resizer').css({
-            margin: '+ outerHeight() +  auto 0 auto'
+            margin: '40px auto 0 auto'
         }).before(resizer);
 
         // Loop through the array, using the each to dynamically generate our ViewPort lists
