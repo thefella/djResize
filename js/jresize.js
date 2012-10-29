@@ -20,7 +20,7 @@
 
         // Insert our resizing plugin
         $('#resizer').css({
-            margin: '40px auto 0px'
+            margin: 'auto 0'
         }).before(resizer);
 
         // Loop through the array, using the each to dynamically generate our ViewPort lists
@@ -43,7 +43,8 @@
             });
         });
         
-        $('.viewports').slideDown(200);
+        $('.viewports').slideDown('300');
+        $('#resizer').animate({marginTop: '40px'});
 
     };
 
