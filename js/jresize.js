@@ -37,7 +37,7 @@
         // Slidedown the viewport navigation and animate the resizer
         var height = $('.viewlist').outerHeight();
         $('.viewports').hide().slideDown('300');
-        $('#resizer').animate({marginTop : height});
+        $('#resizer').css({margin: '0 auto'}).animate({marginTop : height});
 
         // Allow for Reset
         $('.reset').click(function () {
