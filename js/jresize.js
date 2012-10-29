@@ -10,7 +10,7 @@
     $.jResize = function () {
 
         // Define variables
-        var resizer = '<div class="viewports" style="position:fixed;top:0;left:0;right:0;z-index:9999;height:38px;display:none;overflow:auto;background:#444;color:#FFF;border-bottom:2px solid #FFF;"><ul class="viewlist"></ul></div>';
+        var resizer = '<div class="viewports" style="position:fixed;top:0;left:0;right:0;z-index:9999;min-height:38px;display:none;background:#444;color:#FFF;border-bottom:2px solid #FFF;"><ul class="viewlist"></ul><div style="clear:both;"></div></div>';
         var viewPortWidths = ["320px", "480px", "540px", "600px", "768px", "960px", "1024px", "1280px"];
         var viewPortList = 'display:inline-block;cursor:pointer;font-size:12px;line-height:12px;text-align:center;width:100px;border-right:1px solid #555;padding:13px 5px;'
         var credit = '<div style="float:right;padding:13px 25px;font-size:12px;line-height:12px;">jResize Plugin by <a href="http://toddmotto.com" style="color:#FFF;text-decoration:underline;">Todd Motto</a></div>'
