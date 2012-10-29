@@ -12,15 +12,15 @@
 
         var resizer = '<div class="viewports" style="position:fixed;top:0;left:0;right:0;z-index:9999;height:40px;display:none;overflow:auto;background:#444;color:#FFF;border-bottom:2px solid #FFF;"><ul class="viewlist"></ul></div>';
         var viewPortWidths = ["320px", "480px", "540px", "600px", "768px", "960px", "1024px", "1280px"];
-        var viewPortList = 'display:inline-block;cursor:pointer;text-align:center;width:100px;border-right:1px solid #555;padding:10px 5px;'
-        var credit = '<div style="float:right;padding: 10px 25px;;">jResize Plugin by <a href="http://toddmotto.com" style="color:#FFF;text-decoration:underline;">Todd Motto</a></div>'
+        var viewPortList = 'display:inline-block;cursor:pointer;text-align:center;width:100px;border-right:1px solid #555;padding:15px 5px;height:38px;'
+        var credit = '<div style="float:right;padding:15px 25px;">jResize Plugin by <a href="http://toddmotto.com" style="color:#FFF;text-decoration:underline;">Todd Motto</a></div>'
 
         // Wrap all HTML inside the <body>
         $('body').wrapInner('<div id="resizer" />');
 
         // Insert our resizing plugin
         $('#resizer').css({
-            margin: '40px auto 0 auto'
+            margin: '+ outerHeight() +  auto 0 auto'
         }).before(resizer);
 
         // Loop through the array, using the each to dynamically generate our ViewPort lists
@@ -43,8 +43,8 @@
             });
         });
         
-	// Slidedown the navigation
         $('.viewports').slideDown(200);
+        
 
     };
 
