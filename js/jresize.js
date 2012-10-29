@@ -35,8 +35,7 @@
         });
 
         // Prepend our Reset button
-        $('.viewlist').prepend('<li class="reset" style="' + viewPortList + '">Reset</li>');
-        $('.viewlist').prepend(credit);
+        $('.viewlist').prepend('<li class="reset" style="' + viewPortList + '">Reset</li>', credit);
 
         // Allow for Reset
         $('.reset').click(function () {
