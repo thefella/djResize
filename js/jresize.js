@@ -5,12 +5,11 @@
 
 	Responsive development plugin for resizing the content within one window
 */
-
 (function ($) {
 
     $.jResize = function () {
 
-	    // Define variables
+        // Define variables
         var resizer = '<div class="viewports" style="position:fixed;top:0;left:0;right:0;z-index:9999;height:38px;display:none;overflow:auto;background:#444;color:#FFF;border-bottom:2px solid #FFF;"><ul class="viewlist"></ul></div>';
         var viewPortWidths = ["320px", "480px", "540px", "600px", "768px", "960px", "1024px", "1280px"];
         var viewPortList = 'display:inline-block;cursor:pointer;font-size:12px;line-height:12px;text-align:center;width:100px;border-right:1px solid #555;padding:13px 5px;'
@@ -43,10 +42,12 @@
                 width: 'auto'
             });
         });
-        
+
         // Slidedown the viewport navigation and animate the resizer
         $('.viewports').slideDown('300');
-        $('#resizer').animate({marginTop: '40px'});
+        $('#resizer').animate({
+            marginTop: '40px'
+        });
 
     };
 
