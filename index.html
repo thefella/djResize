@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html dir="ltr" lang="en-US" class="no-js">
 
 <head>
 	<meta charset="UTF-8">
@@ -17,23 +17,25 @@
 	<script>
 	$(function() {
 		$.jResize({
-			 viewPortSizes: ['320px', '480px', '540px', '600px', '768px', '960px', '1024px', '1280px']
+			 viewPortSizes   : ['320px', '480px', '540px', '600px', '768px', '960px', '1024px', '1280px'], // ViewPort Widths
+			 backgroundColor : '444', // HEX Code
+			 fontColor       : 'FFF' // HEX Code
 		});
 	});
 	</script>
 </head>
 
 <body>
-
-	<div>
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam dapibus tellus quam, id condimentum lacus. 
-		Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ac ante et neque 
-		facilisis fringilla. Vestibulum lacus tellus, pellentesque sit amet eleifend eu, congue in nibh. Nulla et turpis 
-		ut mauris rutrum blandit. Quisque viverra tempus arcu et posuere. Suspendisse lacinia dolor sed massa dignissim 
-		semper. Nulla facilisi. Ut in augue nunc, in mattis lectus. Nulla consectetur bibendum quam, at vehicula sem 
-		tempor a. Quisque eget dolor tortor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur 
-		ridiculus mus. Vestibulum scelerisque sapien sit amet nisl ultrices quis posuere lorem auctor.
-	</div>
+	
+	<iframe src="http://martinbowler.co.uk" style="width:100%;display:block;border:0;height:1000px;"></iframe>
+		
+	<!-- Google Analytics for Demo -->
+	<script>
+		var _gaq=[['_setAccount','UA-20440416-10'],['_trackPageview']];
+		(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+		g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+		s.parentNode.insertBefore(g,s)}(document,'script'));
+	</script>
 	
 </body>
 </html>
